@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WallFlux Terms and Conditions</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            margin: 0;
+            padding: 16px;
+            line-height: 1.5;
+            transition: background-color 0.3s, color 0.3s;
+            font-size: 14px;
+        }
+
+        body.light-mode { background-color: #fafafa; color: #1c1c1c; }
+        body.light-mode .container { background: #ffffff; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+        body.light-mode h2 { color: #FF7E5F; }
+        body.light-mode .last-updated { color: #666; }
+        body.light-mode .contact { background: #f5f5f5; }
+        body.light-mode .disclaimer { background: #fff3e0; border-left: 3px solid #FF7E5F; }
+        body.light-mode a { color: #FF7E5F; }
+
+        body.dark-mode { background-color: #121212; color: #e0e0e0; }
+        body.dark-mode .container { background: #1e1e1e; box-shadow: 0 1px 3px rgba(0,0,0,0.3); }
+        body.dark-mode h2 { color: #FEB47B; }
+        body.dark-mode .last-updated { color: #9e9e9e; }
+        body.dark-mode .contact { background: #2c2c2c; }
+        body.dark-mode .disclaimer { background: #332800; border-left: 3px solid #FEB47B; }
+        body.dark-mode a { color: #FEB47B; }
+
+        .container { max-width: 900px; margin: auto; padding: 16px; border-radius: 8px; }
+        h1 { margin-top: 0; font-size: 22px; font-weight: 600; }
+        h2 { margin-top: 20px; margin-bottom: 8px; font-size: 16px; font-weight: 600; }
+        p { margin: 8px 0; }
+        .last-updated { font-size: 12px; margin-bottom: 16px; }
+        ul { padding-left: 20px; margin: 8px 0; }
+        li { margin-bottom: 4px; font-size: 14px; }
+        .contact { padding: 12px; border-radius: 6px; margin-top: 8px; }
+        .disclaimer { padding: 10px; margin: 12px 0; font-size: 13px; }
+        .intro { margin-bottom: 12px; }
+        a { text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+    <script>
+        function initTheme() {
+            const params = new URLSearchParams(window.location.search);
+            const theme = params.get('theme') || 'light';
+            document.body.classList.add(theme + '-mode');
+        }
+        document.addEventListener('DOMContentLoaded', initTheme);
+    </script>
+</head>
+<body>
+<div class="container">
+
+    <h1>Terms and Conditions</h1>
+    <div class="last-updated">Last Updated: February 21, 2026</div>
+
+    <p class="intro">Please read these Terms and Conditions carefully before using WallFlux.</p>
+
+    <h2>1. Acceptance of Terms</h2>
+    <p>
+        By downloading, installing, or using WallFlux ("the App"), you agree to be bound by these Terms and Conditions.
+        If you do not agree to these terms, please do not use the App.
+    </p>
+
+    <h2>2. Description of Service</h2>
+    <p>
+        WallFlux is a wallpaper browser and automatic wallpaper changer for Android. It allows you to:
+    </p>
+    <ul>
+        <li>Browse and search wallpapers from the Wallhaven API</li>
+        <li>Save wallpapers to your device as your home or lock screen</li>
+        <li>Save favorite wallpapers locally</li>
+        <li>Schedule automatic wallpaper changes from Wallhaven, your favorites, or a local folder</li>
+    </ul>
+
+    <h2>3. Wallhaven Content and Third-Party Terms</h2>
+    <p>
+        WallFlux displays wallpapers sourced from <a href="https://wallhaven.cc" target="_blank">Wallhaven</a>.
+        All wallpapers displayed in the App are subject to Wallhaven's
+        <a href="https://wallhaven.cc/terms" target="_blank">Terms of Service</a>.
+        By using WallFlux, you also agree to comply with Wallhaven's terms when accessing their content.
+    </p>
+    <p>
+        WallFlux is not affiliated with Wallhaven. Wallpaper rights belong to their respective creators.
+        Use wallpapers in compliance with applicable copyright laws.
+    </p>
+
+    <h2>4. License</h2>
+    <p>
+        Subject to your compliance with these Terms, we grant you a limited, non-exclusive, non-transferable,
+        revocable license to use WallFlux for personal, non-commercial purposes on your Android device.
+    </p>
+
+    <h2>5. User Responsibilities</h2>
+    <p>You agree to:</p>
+    <ul>
+        <li>Use the App in compliance with all applicable laws and regulations</li>
+        <li>Not attempt to reverse engineer, decompile, or disassemble the App</li>
+        <li>Not use the App to download wallpapers in bulk for redistribution</li>
+        <li>Respect the copyright of wallpaper creators</li>
+        <li>Keep your Wallhaven API key confidential (if applicable)</li>
+    </ul>
+
+    <h2>6. Adult Content</h2>
+    <p>
+        WallFlux supports filtering for adult content (NSFW) through the Wallhaven API.
+        NSFW content is disabled by default and requires a valid Wallhaven API key.
+        By enabling NSFW content, you confirm that you are of legal age in your jurisdiction
+        and take full responsibility for the content you access.
+    </p>
+
+    <h2>7. Automatic Wallpaper Changer</h2>
+    <p>The automatic wallpaper changer feature:</p>
+    <ul>
+        <li>Runs as a background service and may consume additional battery</li>
+        <li>Requires an internet connection when using Wallhaven as the source</li>
+        <li>Displays a persistent notification while active</li>
+        <li>Can be disabled at any time from within the App</li>
+    </ul>
+
+    <h2>8. No Warranty</h2>
+    <div class="disclaimer">
+        <p>
+            THE APP IS PROVIDED "AS IS" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED,
+            INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,
+            OR NON-INFRINGEMENT. WE DO NOT GUARANTEE UNINTERRUPTED ACCESS TO WALLHAVEN'S API.
+        </p>
+    </div>
+
+    <h2>9. Limitation of Liability</h2>
+    <div class="disclaimer">
+        <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, WE SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL,
+        SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES ARISING FROM YOUR USE OF THE APP.</p>
+    </div>
+
+    <h2>10. Updates and Modifications</h2>
+    <p>We reserve the right to:</p>
+    <ul>
+        <li>Modify or discontinue the App at any time without notice</li>
+        <li>Update these Terms and Conditions at any time</li>
+        <li>Change App features or functionality</li>
+    </ul>
+    <p>Continued use of the App after changes constitutes acceptance of modified terms.</p>
+
+    <h2>11. Termination</h2>
+    <p>
+        You may terminate your use of the App at any time by uninstalling it from your device.
+        Uninstalling will remove all locally stored data (favorites, preferences).
+    </p>
+
+    <h2>12. Governing Law</h2>
+    <p>
+        These Terms shall be governed by and construed in accordance with applicable laws,
+        without regard to conflict of law principles.
+    </p>
+
+    <h2>13. Contact Information</h2>
+    <div class="contact">
+        <p>For questions about these Terms and Conditions, please contact us at:</p>
+        <p>Email: <a href="mailto:weekendbuilder8@gmail.com">weekendbuilder8@gmail.com</a></p>
+        <p>
+            By using WallFlux, you acknowledge that you have read, understood, and agree to be bound
+            by these Terms and Conditions.
+        </p>
+    </div>
+
+</div>
+</body>
+</html>
