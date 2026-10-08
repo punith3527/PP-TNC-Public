@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nimbus Terms and Conditions</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            margin: 0;
+            padding: 16px;
+            line-height: 1.5;
+            transition: background-color 0.3s, color 0.3s;
+            font-size: 14px;
+        }
+
+        /* Light mode (default) */
+        body.light-mode {
+            background-color: #fafafa;
+            color: #1c1c1c;
+        }
+
+        body.light-mode .container {
+            background: #ffffff;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+
+        body.light-mode h2 {
+            color: #1976d2;
+        }
+
+        body.light-mode .last-updated {
+            color: #666;
+        }
+
+        body.light-mode .contact {
+            background: #f5f5f5;
+        }
+
+        body.light-mode .disclaimer {
+            background: #fff3e0;
+            border-left: 3px solid #ff9800;
+        }
+
+        body.light-mode a {
+            color: #1976d2;
+        }
+
+        /* Dark mode */
+        body.dark-mode {
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+
+        body.dark-mode .container {
+            background: #1e1e1e;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+        }
+
+        body.dark-mode h2 {
+            color: #90caf9;
+        }
+
+        body.dark-mode .last-updated {
+            color: #9e9e9e;
+        }
+
+        body.dark-mode .contact {
+            background: #2c2c2c;
+        }
+
+        body.dark-mode .disclaimer {
+            background: #332800;
+            border-left: 3px solid #ffa726;
+        }
+
+        body.dark-mode a {
+            color: #90caf9;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 16px;
+            border-radius: 8px;
+        }
+
+        h1 {
+            margin-top: 0;
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        h2 {
+            margin-top: 20px;
+            margin-bottom: 8px;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        p {
+            margin: 8px 0;
+        }
+
+        .last-updated {
+            font-size: 12px;
+            margin-bottom: 16px;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin: 8px 0;
+        }
+
+        li {
+            margin-bottom: 4px;
+            font-size: 14px;
+        }
+
+        .contact {
+            padding: 12px;
+            border-radius: 6px;
+            margin-top: 8px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover { text-decoration: underline; }
+
+        .intro {
+            margin-bottom: 12px;
+        }
+
+        .disclaimer {
+            padding: 10px;
+            margin: 12px 0;
+            font-size: 13px;
+        }
+    </style>
+    <script>
+        // Get theme from URL parameter (dark or light)
+        function initTheme() {
+            const params = new URLSearchParams(window.location.search);
+            const theme = params.get('theme') || 'light';
+            document.body.classList.add(theme + '-mode');
+        }
+
+        // Initialize theme on page load
+        document.addEventListener('DOMContentLoaded', initTheme);
+    </script>
+</head>
+
+<body>
+<div class="container">
+
+    <h1>Terms and Conditions</h1>
+
+    <div class="last-updated">
+        Last Updated: October 9, 2026
+    </div>
+
+    <h2>1. Acceptance of Terms</h2>
+    <p>
+        By downloading, installing or using Nimbus ("the app"), you agree to these Terms and
+        Conditions. If you do not agree, please do not use the app.
+    </p>
+
+    <h2>2. Description of Service</h2>
+    <p>
+        Nimbus is a private photo vault. It encrypts photographs and videos on your device and
+        stores them in your own Telegram Saved Messages. It provides:
+    </p>
+    <ul>
+        <li>Encrypted backup of photographs and videos you choose</li>
+        <li>Automatic backup of folders you choose to keep up</li>
+        <li>Browsing by day, album, folder, place and search</li>
+        <li>Freeing space on your device once a copy is verified present in the vault</li>
+    </ul>
+
+    <h2>3. You need a Telegram account</h2>
+    <p>
+        Nimbus stores your files in your own Telegram Saved Messages and requires you to sign in
+        with your Telegram account. Your use of Telegram is governed by Telegram's own Terms of
+        Service and Privacy Policy, which are between you and Telegram. We are not affiliated with,
+        endorsed by, or acting on behalf of Telegram.
+    </p>
+    <p>
+        Telegram's storage limits, rate limits and account policies apply to your use of Nimbus, and
+        are outside our control.
+    </p>
+
+    <h2>4. Your recovery key is your responsibility</h2>
+    <p>
+        <strong>This is the most important term in this document.</strong> Nimbus encrypts your
+        files with a key derived from a recovery key that is generated on your device and never
+        leaves it.
+    </p>
+    <ul>
+        <li>You must write it down and keep it somewhere safe.</li>
+        <li>We do not have a copy and cannot produce one.</li>
+        <li>There is no password reset, no account recovery and no support route that can open your
+            vault for you.</li>
+        <li><strong>If you lose your recovery key and lose access to this device, your files are
+            permanently unreadable.</strong></li>
+    </ul>
+
+    <h2>5. License</h2>
+    <p>
+        You are granted a limited, non-exclusive, non-transferable licence to use the app for
+        personal, non-commercial purposes. You may not reverse engineer, decompile, redistribute or
+        resell the app.
+    </p>
+
+    <h2>6. User Responsibilities</h2>
+    <p>You agree to:</p>
+    <ul>
+        <li>Keep your recovery key safe and private</li>
+        <li>Keep your Telegram account secure</li>
+        <li>Use the app only for content you own or have the right to store</li>
+        <li>Not use the app for any unlawful purpose</li>
+    </ul>
+
+    <h2>7. Freeing up space</h2>
+    <p>
+        The app can delete device copies of photographs to free storage. It only offers to delete a
+        copy after verifying, byte for byte, that a matching copy exists in your vault. Even so,
+        <strong>deleting files from your device is irreversible</strong>, and you are responsible
+        for the decision to do so. We strongly recommend keeping your own independent backup of
+        anything irreplaceable.
+    </p>
+
+    <h2>8. No Warranty</h2>
+    <p>
+        The app is provided "as is" and "as available", without warranty of any kind, express or
+        implied. We do not warrant that:
+    </p>
+    <ul>
+        <li>The app will be uninterrupted, timely or error-free</li>
+        <li>Backups will always complete, or complete within any particular time</li>
+        <li>Files stored in Telegram will remain available indefinitely</li>
+        <li>The app is a substitute for a complete backup strategy</li>
+    </ul>
+    <p>
+        <strong>Nimbus is not your only backup.</strong> Keep another copy of anything you cannot
+        bear to lose.
+    </p>
+
+    <h2>9. Limitation of Liability</h2>
+    <p>
+        To the maximum extent permitted by law, we shall not be liable for any indirect, incidental,
+        special, consequential or punitive damages, or any loss of data, photographs, profits or
+        goodwill, arising out of your use of or inability to use the app — including loss resulting
+        from a lost recovery key, from deleting device copies, or from any action, outage or policy
+        of Telegram.
+    </p>
+
+    <h2>10. Updates and Modifications</h2>
+    <p>
+        We may update the app and these Terms from time to time. Continued use after an update
+        constitutes acceptance of the revised Terms. Material changes will be reflected here with an
+        updated "Last Updated" date.
+    </p>
+
+    <h2>11. Termination</h2>
+    <p>
+        You may stop using the app at any time by signing out or uninstalling it. Signing out erases
+        this device's copy of your keys; your encrypted files remain in your Telegram Saved Messages
+        until you delete them there.
+    </p>
+
+    <h2>12. Governing Law</h2>
+    <p>
+        These Terms are governed by the laws of India, without regard to conflict of law provisions.
+    </p>
+
+    <h2>13. Severability</h2>
+    <p>
+        If any provision of these Terms is found to be unenforceable, the remaining provisions
+        continue in full force and effect.
+    </p>
+
+    <h2>14. Entire Agreement</h2>
+    <p>
+        These Terms, together with the Privacy Policy, constitute the entire agreement between you
+        and us regarding the app.
+    </p>
+
+    <h2>15. Contact Information</h2>
+    <div class="contact">
+        <p>
+            If you have questions about these Terms, please contact us at:
+        </p>
+        <p>
+            Email: <a href="mailto:weekendbuilder8@gmail.com">weekendbuilder8@gmail.com</a>
+        </p>
+    </div>
+
+</div>
+</body>
+</html>
